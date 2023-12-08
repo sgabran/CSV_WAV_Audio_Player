@@ -28,7 +28,7 @@ class FramePlayAudioData:
 
         ######################################################################
         # GUI Frames
-        self.frame = LabelFrame(self.root, width=WINDOW_WIDTH, height=120, padx=30, pady=5, text="Play Audio")
+        self.frame = LabelFrame(self.root, width=WINDOW_WIDTH, height=120, padx=30, pady=5, text="Process Audio")
         self.frame.grid_propagate(False)
 
         # Grids
