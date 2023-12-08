@@ -46,8 +46,6 @@ class FramePlayAudioData:
         # Frame Sample Rate
         # Labels
         label_sample_rate = Label(self.frame_sample_rate, text="Sample Rate [sample/sec]", padx=5, pady=5)
-        label_sample_rate_2 = Label(self.frame_sample_rate, text="(Match with I2S MCU configuration)",
-                                    fg='brown', padx=5, pady=5)
 
         # Sample rate drop list
         self.optionmenu_sample_rate_selected = StringVar(self.frame)
@@ -60,7 +58,6 @@ class FramePlayAudioData:
         # Grid
         label_sample_rate.grid(row=0, column=0)
         self.optionmenu_sample_rate.grid(row=0, column=1)
-        label_sample_rate_2.grid(row=0, column=2, sticky=E)
 
         # Frame Choose File
         # Labels
