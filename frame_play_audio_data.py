@@ -145,6 +145,7 @@ class FramePlayAudioData:
         csv_data /= np.max(np.abs(csv_data))
         file_root_name = os.path.splitext(filefullname)[0]
         wav_filefullname = str(file_root_name) + ".wav"
+        # Single column data will be identified as mono. 2 column data will be stereo
         sf.write(wav_filefullname, csv_data, samplerate)
         return wav_filefullname
 
